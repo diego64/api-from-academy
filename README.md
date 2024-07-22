@@ -1,6 +1,6 @@
 # App
 
-API similar to functionality ymPass style GymPass style 
+API similar to functionality GymPass style 
 
 ## RFs (Requisitos funcionais)
 
