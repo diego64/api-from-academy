@@ -5,7 +5,7 @@ import { expect, describe, it } from 'vitest'
 import { RegisterUseCase } from './register'
 
 describe('Register Use Case', () => {
-  it('should to register', async () => {
+  it('should be able to register', async () => {
     const usersRepository = new InMemoryUsersRepository()
     const registerUseCase = new RegisterUseCase(usersRepository)
 
