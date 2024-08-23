@@ -15,11 +15,11 @@
 
 ## 📍 Overview
 
-The application aims to be an API that allows the user to schedule their day at the gym and a gym to register its unit.
+The application aims to be an API that allows the user to schedule their day at the gym and a gym to register its unit. Remembering that you need to have `Node.js` and `docker` installed on your machine.
 
-The application has the following rules
+The application has the following rules.
 
-## RFs (Functional Requirements)
+### 🔌 RFs (Functional Requirements)
 
 - [x] It must be possible to register;
 - [x] It must be possible to authenticate;
@@ -32,7 +32,7 @@ The application has the following rules
 - [x] It must be possible to validate a user's check-in;
 - [x] It must be possible to register a gym;
 
-## RNs (Business Rules)
+### 📦 RNs (Business Rules) 
 
 - [x] The user must not be able to register with a duplicate email;
 - [x] The user cannot check-in twice on the same day; - [x] The user cannot check in if he/she is not close (100m) to the gym;
@@ -40,7 +40,7 @@ The application has the following rules
 - [x] The check-in can only be validated by administrators;
 - [x] The gym can only be registered by administrators;
 
-## NFRs (Non-functional Requirements)
+### 🧩 NFRs (Non-functional Requirements)
 
 - [x] The user's password must be encrypted;
 - [x] The application data must be persisted in a PostgreSQL database;
@@ -65,13 +65,6 @@ The application has the following rules
 
 ---
 
-## 🚀 Getting Started
-
-**System Requirements**
-
-* **Node.js**: `version 20.13.1`
-* **Docker**: `version 24.0.2`
-
 ### ⚙️ Installation
 
 <h4>From <code>source</code></h4>
@@ -84,7 +77,7 @@ The application has the following rules
 >
 > 2. Change to the project directory:
 > ```console
-> $ napi-from-academy
+> $ cd api-from-academy
 > ```
 >
 > 3. Install the dependencies:
@@ -95,7 +88,11 @@ The application has the following rules
 > ```console
 > $ docker compose up -d
 > ```
-> 5. Start the application:
+> 5. Generate the migrantios:
+> ```console
+> $ npx prisma migrate dev
+> ```
+> 6. Start the application:
 > ```console
 > $ npm run start:dev
 > ```
